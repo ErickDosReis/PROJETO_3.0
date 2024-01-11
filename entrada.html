@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="entrada.css">
+</head>
+<body>
+    <header>
+        <h1>Entrada do Estoque</h1>            
+    </header>
+    <div id="container">
+        <div id="caixa1">
+            <section id="A">
+                <input type="text" class="inputcodigo" name="codigo" id="codigo" placeholder="Código...">
+                <input type="button" class="alinhaBtnsC" value="Buscar" onclick="buscarProduto()">
+                
+                <input type="text" class="outrosinputs" name="produto" id="produto" placeholder="produto...">     
+
+                <input type="text" class="outrosinputs" name="marca" id="marca" placeholder="Marca...">
+
+                <input type="text" class="outrosinputs" name="modelo" id="modelo" placeholder="Modelo...">
+
+                <input type="number" class="outrosinputs" name="valor" id="valor" placeholder="Valor..." min="0">
+
+                <input type="number" class="outrosinputs" name="quantidade" id="quantidade" placeholder="Quantidade..." min="1">
+
+                <p> 
+                    <input type="button" class="alinhaBtns" value="Incluir" onclick="incluir()">
+                    <input type="button" class="alinhaBtns" value="Ver Estoque" onclick="window.open('estoque.html','_self')">
+                    <input type="button" class="alinhaBtns" value="Voltar ao Menu" onclick="window.open('Menu_Inicial.html','_self')">
+                </p>
+            </section>
+        </div>
+
+        <div id="caixa2">
+            <section id="B">
+                <form name="myForm">
+                    <select name="listaSelect" id="listaSelect" size="20"></select>
+                </form>
+                <input type="button" class="alinhaBtnsB" value="Finalizar" onclick="finalizar()">
+                <input type="button" class="alinhaBtnsB" value="Apagar Seleção"  onclick="excluirSelecionado()">
+                <input type="button" class="alinhaBtnsB" value="Apagar Todos"  onclick="excluirTodos()">
+            </section>
+            <div id="res"></div>
+        </div>
+    </div>
+
+    <script src="entrada.js"></script>
+
+    <footer>
+        <p>&copy; 2023 Minha empresa</p>
+        <p>Endereço: Rua Nome da Rua, 123 - Bairro, Cidade - Estado</p>
+        <p>Telefone: (00) 0000-0000</p>
+        <p>E-mail: contato@minhaempresa.com</p>
+    </footer>    
+</body>
+</html>

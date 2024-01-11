@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Estoque</title>
+  <link rel="stylesheet" href="estoque.css">
+</head>
+<body>
+    <header>
+        <h1>Produtos em Estoque</h1>
+    </header>
+
+    <div id="caixa1">
+      <section id="A">
+        <input type="button" class="alinhaBtns" value="Entrada" onclick="window.open('entrada.html','_self')">
+        <input type="button" class="alinhaBtns" value="Saída" onclick="window.open('saida.html','_self')">
+        <input type="button" class="alinhaBtns" value="em construção...">
+        <input type="button" class="alinhaBtns" value="em construção...">
+        <input type="button" class="alinhaBtns" value="em construção...">
+        <input type="button" class="alinhaBtns" value="Voltar ao Menu" onclick="window.open('Menu_Inicial.html','_self')">
+      </section>
+    </div>
+    
+    <div id="caixa2">
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Valor</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- Aqui serão inseridas as linhas da tabela dinamicamente pelo JavaScript -->
+        </tbody>
+      </table>
+    </div>
+    
+    <script src="estoque.js"></script>
+    
+    <footer>
+      <p>&copy; 2023 Minha empresa</p>
+      <p>Endereço: Rua Nome da Rua, 123 - Bairro, Cidade - Estado</p>
+      <p>Telefone: (00) 0000-0000</p>
+      <p>E-mail: contato@minhaempresa.com</p>
+    </footer>    
+</body>
+</html>
